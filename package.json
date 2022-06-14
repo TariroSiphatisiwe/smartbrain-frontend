@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://github.com/TariroSiphatisiwe/smartbrain-face-detection-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,12 +15,14 @@
     "react-scripts": "^5.0.1",
     "react-tilt": "^0.1.4",
     "react-tsparticles": "^2.0.6",
-    "serve": "^6.4.10",
+    "serve": "13.0.2",
     "tachyons": "^4.12.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
